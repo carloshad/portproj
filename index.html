@@ -35,11 +35,11 @@
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>Portfólio de Projetos do Carlitos</h1>
-											<p>Ao infinito e além! Tem um recadinho para vocês lá no final da página.</p>
+											<h1>Portfólio do Carlitos</h1>
+											<p>O problema do problema é entender o problema.</p>
 										</header>
 
-										<p>Tem pouca coisa por enquanto; ainda está em construção. Basicamente a estrutura da página, uma foto, um único projeto, e mais algumas informações.</br></br>
+										<p>Tem pouca coisa aqui por enquanto; ainda está em construção. Basicamente a estrutura da página, uma foto, dois projetos de Power BI, e mais algumas informações.</br></br>
 										   É assim que fomos instruídos a fazer: um portfólio "vazião" que, a cada aprendizado, a cada passo da jornada, a cada habilidade desenvolvida, vai sendo fortalecido com conteúdo.<br><br>
 										   Para entrar em contato comigo veja as informações no final dessa página.<br><br>
 										 </p>
@@ -98,6 +98,7 @@
 										<h2>Projetos</h2>
 									</header>
 									<div class="posts">
+										<!-- NPS Dashboard -->
 										<article>
 											<a href="https://app.powerbi.com/view?r=eyJrIjoiODdmNzlkYTAtYmE5Yy00NTQ2LThjY2ItYmQ3NDEwYzQyZmNjIiwidCI6IjJiYzhjMDYwLTA1NTItNGExNC1hZTY0LTYxYjQ0NTU4MjJiYSJ9&pageName=ReportSection3682d4a3c69f8a5ecd82" class="image"><img src="images/pic01.jpg" alt="" /></a>
 											<h3>NPS Dashboard (Power BI)</h3>
@@ -109,12 +110,29 @@
 												<li><a href="https://app.powerbi.com/view?r=eyJrIjoiODdmNzlkYTAtYmE5Yy00NTQ2LThjY2ItYmQ3NDEwYzQyZmNjIiwidCI6IjJiYzhjMDYwLTA1NTItNGExNC1hZTY0LTYxYjQ0NTU4MjJiYSJ9&pageName=ReportSection3682d4a3c69f8a5ecd82" class="button">Saiba mais</a></li>
 											</ul>
 										</article>
+										<!-- Funil de Respostas -->
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<a href="https://app.powerbi.com/view?r=eyJrIjoiMjA2N2IyZmQtZjdiZi00MWY3LTk0MDYtNzQ4MjYzYWZlYWRhIiwidCI6IjJiYzhjMDYwLTA1NTItNGExNC1hZTY0LTYxYjQ0NTU4MjJiYSJ9" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<h3>Funil de Respostas (Power BI)</h3>
+											<p>
+												Esse projeto de portfólio pretende apresentar uma visualização baseada em Gráficos de Funil colocados lado a lado, cada um deles mostrando os dados de uma determinada marca (de um produto qualquer), representando a conclusão de uma pesquisa de opinião pública que trouxe 4 perguntas eliminatórias aos respondentes. As perguntas foram: (Conhece) 1. Quais marcas você conhece?; (Considera) 2. Quais marcas você não é cliente, mas consideraria comprar?; (Possui) 3. Qual marca você possui (ou já possuiu)?; (Preferência) 4. Se você pudesse escolher apenas uma marca para comprar, qual seria?.
+												<br><br>
+												Apesar de apresentar os resultados em forma de funil, <strong>essa solução não foi desenvolvida com o Gráfico de Funil</strong> do Power BI; nesse caso específico o Gráfico de Funil não atenderia muito bem. A solução foi implementada com o tradicional Gráfico de Barras Empilhadas; e <strong>um recurso especial utilizando-se séries invisíveis</strong> foi usado para mostrar as barras do Gráfico de Barras deslocadas uma abaixo da outra de forma a parecer um funil. Além disso, a opção do Gráfico de Barras chamada <b>"Múltiplos Pequenos"</b> resolve melhor essa necessidade de se mostrar vários gráficos lado a lado simultaneamente.
+												<br><br>
+												<u>Por quê não utilizar o Gráfico de Funil nesse relatório?</u> São 3 motivos pelos quais esse tipo de gráfico não funcionaria bem nessa solução:
+												<ul>
+												 	<li>Para cada marca existente na base de dados, um Gráfico de Funil teria que ser incluído e filtrado para mostrar os dados somente daquela marca; assim sendo, o aparecimento de novas marcas não seriam contempladas no relatório (não apareceriam) até que o relatório fosse programado para incluir um novo gráfico filtrado especificamente para cada nova marca.</li>
+													<br>
+												 	<li>Cada um dos gráficos incluídos no relatório deveria ter um tratamento diferenciado para incluir um título que indicasse a marca representada em cada gráfico, e filtro específico para a marca considerada em cada gráfico. Além disso, no caso de alguma marca ter o nome alterado, o gráfico dessa marca ficaria vazio (em branco) até que o filtro desse gráfico fosse ajustado no Power BI.</li>
+													<br>
+												 	<li>Um filtro global nessa página baseado na marca não funcionaria adequadamente.</li>
+												</ul>
+												A segunda página do relatório (Solução com Gráfico de Funil) exibe a solução baseada em Gráficos de Funil a título de exemplo, já que na programação e desenvolvimento não se mostraria como <b>boa prática</b>, embora essa solução fique esteticamente mais agradável.
+												<br><br>
+												O dataset foi gerado artificialmente através de macro do Excel, e por isso está estranhamente simétrico.
+											</p>
 											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
+												<li><a href="https://app.powerbi.com/view?r=eyJrIjoiMjA2N2IyZmQtZjdiZi00MWY3LTk0MDYtNzQ4MjYzYWZlYWRhIiwidCI6IjJiYzhjMDYwLTA1NTItNGExNC1hZTY0LTYxYjQ0NTU4MjJiYSJ9" class="button">Saiba mais</a></li>
 											</ul>
 										</article>
 										<article>
@@ -157,30 +175,28 @@
 									<header class="major">
 										<h2>Contato</h2>
 									</header>
-
 									<div class="features">
 										<article>
 											<img src="images/pic12.jpg" alt="" width="100" height="100"/>
 											<div class="content">
-												<p> Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-														Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+												<p> E não somente isto, mas também nos alegramos nas tribulações, sabendo que a tribulação produz paciência; e a paciência, a experiência; e a experiência, a esperança.
+														E a esperança não traz confusão. Rm 5:3-5
 												</p>
 											</div>
 										</article>
 									</div>
-
 									<ul class="contact">
 										<li class="icon solid  fa-envelope"><a href="mailto:carloshad@live.com">carloshad@live.com</a></li>
 										<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/carloshad">LinkedIn</a></li>
 										<li class="icon solid  fa-phone">+55 (21) 97193-9753</li>
 										<li class="icon solid  fa-home">Volta Redonda, RJ<br>Brasil, 27.251-177</li>
-										<li class="icon solid  fa-heart">Alvinho, Carol, Felipe, Maicon >>> amo vocês!</li>
+										<li class="icon solid  fa-heart">Galera <strong>muito show!</strong></li>
 									</ul>
 								</section>
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo images: <a href="https://unsplash.com">Unsplash</a>; design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 								</footer>
 
 						</div>
